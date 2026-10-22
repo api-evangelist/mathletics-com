@@ -1,0 +1,94 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 7
+  own: 7
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - identity
+  - marketing
+  - other
+  - support
+  - website
+hosts:
+- host: api.mathletics.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: mathletics.com
+  role: api
+  relation: own
+- host: knowledgebase.mathletics.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: mathletics.com
+  role: other
+  relation: own
+- host: login.mathletics.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: mathletics.com
+  role: identity
+  relation: own
+- host: mathletics.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Blog
+  serves: []
+  registrable_domain: mathletics.com
+  role: marketing
+  relation: own
+- host: parent.prod.eastus2.mathletics.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: mathletics.com
+  role: other
+  relation: own
+- host: support.mathletics.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: mathletics.com
+  role: support
+  relation: own
+- host: www.mathletics.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: mathletics.com
+  role: website
+  relation: own
